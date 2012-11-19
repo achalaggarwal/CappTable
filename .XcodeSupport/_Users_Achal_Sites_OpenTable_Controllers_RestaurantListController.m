@@ -1,0 +1,3 @@
+#import "_Users_Achal_Sites_OpenTable_Controllers_RestaurantListController.h"
+@implementation RestaurantListController
+@end
