@@ -44,6 +44,7 @@
 				<string>EDE44FE6B3BABF5EFF5E5428</string>
 				<string>B371473693B7D82C8E2FA21B</string>
 				<string>BE484F51BE133C5F5D7676CC</string>
+				<string>1F5E455B8F43962DF33D623E</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -88,6 +89,19 @@
 			<string>_Users_Achal_Sites_OpenTable_Controllers_HomeController.m</string>
 			<key>path</key>
 			<string>.XcodeSupport/_Users_Achal_Sites_OpenTable_Controllers_HomeController.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>1F5E455B8F43962DF33D623E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>?</string>
+			<key>name</key>
+			<string>CPObject+Additions.j</string>
+			<key>path</key>
+			<string>Extras/CPObject+Additions.j</string>
 			<key>sourceTree</key>
 			<string>SOURCE_ROOT</string>
 		</dict>

@@ -35,13 +35,38 @@
 
     // In this case, we want the window from Cib to become our full browser window
     [theWindow setFullPlatformWindow:YES];
-    // CPLog(homeController);
-    //CPLog([splashScreenController view]);
-    // CPLog(restaurantListController);
     var contentView = [theWindow contentView];
     var _view = [splashScreenController view];
     [_view setFrame:CGRectMake(0, 0, CGRectGetWidth([contentView bounds]), CGRectGetHeight([contentView bounds]))];
     [contentView addSubview:_view];
+
+    [self setup];
+}
+
+- (void) setup {
+    [self registerForNotifications];
+}
+
+- (void) registerForNotifications {
+    [[CPNotificationCenter defaultCenter] addObserver:self selector:@selector(dismissSplash:) name:@"DISMISS_SPLASH_SCREEN" object:nil];
+}
+
+- (void) dismissSplash:(CPNotification) aNotification {
+    var splashView = [splashScreenController view];
+    var startFrame = [splashView frame];
+    var endFrame = CGRectMake(0, 2*CGRectGetHeight(startFrame), CGRectGetWidth(startFrame), CGRectGetHeight(startFrame));
+
+    var animation = [[CPViewAnimation alloc] initWithViewAnimations:[
+       [CPDictionary dictionaryWithJSObject:{
+           CPViewAnimationTargetKey:splashView,
+           CPViewAnimationStartFrameKey:startFrame,
+           CPViewAnimationEndFrameKey:endFrame
+       }]
+    ]];
+
+    [animation setAnimationCurve:CPAnimationEaseInOut];
+    [animation setDuration:0.5];
+    [animation startAnimation];
 }
 
 @end
