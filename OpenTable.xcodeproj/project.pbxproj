@@ -45,6 +45,8 @@
 				<string>B371473693B7D82C8E2FA21B</string>
 				<string>BE484F51BE133C5F5D7676CC</string>
 				<string>1F5E455B8F43962DF33D623E</string>
+				<string>D2E749EFA2FA815305526B4C</string>
+				<string>F28E4403AF87C5874913E190</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -117,6 +119,13 @@
 			<string>Extras/CPObject+Additions.j</string>
 			<key>sourceTree</key>
 			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>27504560A34371310FFC45CF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5B084F71A310892FBC164ED2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>28DF4B8687E1AA985EEEAD4E</key>
 		<dict>
@@ -213,6 +222,19 @@
 			<string>_Users_Achal_Sites_OpenTable_Controllers_RestaurantListController.h</string>
 			<key>path</key>
 			<string>.XcodeSupport/_Users_Achal_Sites_OpenTable_Controllers_RestaurantListController.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>5B084F71A310892FBC164ED2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>_Users_Achal_Sites_OpenTable_Models_DataAPI.m</string>
+			<key>path</key>
+			<string>.XcodeSupport/_Users_Achal_Sites_OpenTable_Models_DataAPI.m</string>
 			<key>sourceTree</key>
 			<string>SOURCE_ROOT</string>
 		</dict>
@@ -320,6 +342,8 @@
 				<string>1F23475BAE967B0333225FBF</string>
 				<string>52E7470E97A287B4C68F697D</string>
 				<string>1A9E4BA19A088AE918AF0138</string>
+				<string>B6F74E458EE0D14BC7DD5A64</string>
+				<string>5B084F71A310892FBC164ED2</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -402,6 +426,7 @@
 				<string>F50A4B2AA867F6BD1D7A18AB</string>
 				<string>CF5A4633BE6D7231187475C5</string>
 				<string>4060497E90000377D20BBE2B</string>
+				<string>27504560A34371310FFC45CF</string>
 			</array>
 			<key>isa</key>
 			<string>PBXSourcesBuildPhase</string>
@@ -773,6 +798,19 @@
 			<key>sourceTree</key>
 			<string>SOURCE_ROOT</string>
 		</dict>
+		<key>B6F74E458EE0D14BC7DD5A64</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>_Users_Achal_Sites_OpenTable_Models_DataAPI.h</string>
+			<key>path</key>
+			<string>.XcodeSupport/_Users_Achal_Sites_OpenTable_Models_DataAPI.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
 		<key>BE484F51BE133C5F5D7676CC</key>
 		<dict>
 			<key>isa</key>
@@ -806,6 +844,19 @@
 			<key>sourceTree</key>
 			<string>SOURCE_ROOT</string>
 		</dict>
+		<key>D2E749EFA2FA815305526B4C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>?</string>
+			<key>name</key>
+			<string>CPObject+Additions.j</string>
+			<key>path</key>
+			<string>Extras/CPObject+Additions.j</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
 		<key>EDE44FE6B3BABF5EFF5E5428</key>
 		<dict>
 			<key>isa</key>
@@ -816,6 +867,19 @@
 			<string>CPObject+Additions.j</string>
 			<key>path</key>
 			<string>Extras/CPObject+Additions.j</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>F28E4403AF87C5874913E190</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>?</string>
+			<key>name</key>
+			<string>DataAPI.j</string>
+			<key>path</key>
+			<string>Models/DataAPI.j</string>
 			<key>sourceTree</key>
 			<string>SOURCE_ROOT</string>
 		</dict>

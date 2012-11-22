@@ -26,8 +26,10 @@ var dataAPI = nil;
 }
 
 - (CPArray) citiesArray {
-  CPLog(cities);
-  return nil;
+  if ([cities objectForKey:@"cities"] != nil) {
+    return [cities objectForKey:@"cities"];
+  }
+  return [[CPArray alloc] init];
 }
 
 -(void)connection:(CPURLConnection)connection didFailWithError:(id)error {
@@ -40,7 +42,8 @@ var dataAPI = nil;
 -(void)connection:(CPURLConnection)connection didReceiveData:(CPString)data {
   switch(connection) {
     case citiesConnection:
-    cities = [CPDictionary dictionaryWithJSObject:data recursively:NO];
+    var _obj = JSON.parse(data);
+    cities = [CPDictionary dictionaryWithJSObject:_obj recursively:YES];
     [[CPNotificationCenter defaultCenter] postNotificationName:@"RELOAD_CITIES" object:nil];
     break;
 

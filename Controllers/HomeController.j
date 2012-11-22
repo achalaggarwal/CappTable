@@ -2,6 +2,7 @@
 
 @implementation HomeController : CPViewController {
   @outlet CPImageView mainImage;
+  @outlet CPTableView citiesList;
 }
 
 - (void) viewDidLoad {
@@ -22,16 +23,15 @@
 }
 
 - (void)reloadData:(CPNotification) aNotification {
-  CPLog(@"I am here");
-  CPLog([[DataAPI shared] citiesArray]);
+  [citiesList reloadData];
 }
 
 - (int)numberOfRowsInTableView:(CPTableView)aTableView {
-  return 500;
+  return [[[DataAPI shared] citiesArray] count];
 }
 
 - (id)tableView:(CPTableView)aTableView objectValueForTableColumn:(CPTableColumn)aColumn row:(int)aRowIndex {
-  return @"Hello City Name " + aRowIndex;
+  return [[[DataAPI shared] citiesArray] objectAtIndex:aRowIndex];
 }
 
 @end

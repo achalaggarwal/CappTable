@@ -5,5 +5,6 @@
 @interface HomeController : NSViewController
 
 @property (assign) IBOutlet NSImageView* mainImage;
+@property (assign) IBOutlet NSTableView* citiesList;
 
 @end
