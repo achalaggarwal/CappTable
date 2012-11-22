@@ -43,7 +43,7 @@
 }
 
 - (void) registerForNotifications {
-    [[CPNotificationCenter defaultCenter] addObserver:self selector:@selector(dismissSplash:) name:@"DISMISS_SPLASH_SCREEN" object:nil];
+    [[CPNotificationCenter defaultCenter] addObserver:self selector:@selector(dismissSplash:) name:DISMISS_SPLASH_SCREEN_NOTIFICATION object:nil];
 }
 
 - (void) dismissSplash:(CPNotification) aNotification {

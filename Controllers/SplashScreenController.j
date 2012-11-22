@@ -1,3 +1,8 @@
+
+@import "../Models/DataAPI.j"
+
+DISMISS_SPLASH_SCREEN_NOTIFICATION = @"DISMISS_SPLASH_SCREEN";
+
 @implementation SplashScreenController : CPViewController {
   @outlet CPImageView splashImage;
 }
@@ -6,8 +11,9 @@
   [super viewDidLoad];
 }
 
-- (void) hello {
-  [[CPNotificationCenter defaultCenter] postNotificationName:@"DISMISS_SPLASH_SCREEN" object:nil];
+- (void) dismissSelf {
+  [[DataAPI shared] fetchCities];
+  [[CPNotificationCenter defaultCenter] postNotificationName:DISMISS_SPLASH_SCREEN_NOTIFICATION object:nil];
 }
 
 - (void)awakeFromCib {
@@ -20,7 +26,7 @@
   var image1 = [[CPImage alloc] initWithContentsOfFile:path];
   [splashImage setImage:image1];
   [splashImage setImageScaling:CPScaleToFit];
-  [self performSelector:@selector(hello) afterDelay:2];
+  [self performSelector:@selector(dismissSelf) afterDelay:2];
 }
 
 @end
